@@ -66,10 +66,9 @@ public class RankCommand implements CommandExecutor, TabCompleter {
             return true;
         }
 
-        Rank_Utils.Rank rank;
-        try {
-            rank = Rank_Utils.Rank.valueOf(args[2].toUpperCase());
-        } catch (IllegalArgumentException e) {
+        Rank_Utils.Rank rank = getRank(args[2]);
+
+        if (rank == null) {
             executer.sendMessage("§cInvalid rank!");
             return true;
         }
@@ -151,4 +150,14 @@ public class RankCommand implements CommandExecutor, TabCompleter {
 
         return Collections.emptyList();
     }
+
+    private Rank_Utils.Rank getRank(String input) {
+        for (Rank_Utils.Rank rank : Rank_Utils.Rank.values()) {
+            if (rank.name().equalsIgnoreCase(input)) {
+                return rank;
+            }
+        }
+        return null;
+    }
+
 }

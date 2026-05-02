@@ -1,6 +1,7 @@
 package vinc.sechs.soupify_core.Commands;
 
 import org.bukkit.Bukkit;
+import org.bukkit.Sound;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -59,6 +60,8 @@ public class RCommand implements CommandExecutor {
 
         player.sendMessage(messageTarget);
         target.sendMessage(messageSender);
+
+        target.playSound(player.getLocation(), Sound.ORB_PICKUP, 1.0F, 1.0F);
 
         messageManager.setLastMessage(player.getUniqueId(), target.getUniqueId());
         return true;

@@ -13,6 +13,7 @@ import vinc.sechs.soupify_core.ServerBasic.Chat;
 import vinc.sechs.soupify_core.ServerBasic.ServerJoin;
 import vinc.sechs.soupify_core.ServerBasic.Settings;
 import vinc.sechs.soupify_core.Tasks.NameTask;
+import vinc.sechs.soupify_core.Utils.Rank_Utils;
 
 public final class Soupify_core extends JavaPlugin {
     public static JavaPlugin instance;
@@ -68,7 +69,7 @@ public final class Soupify_core extends JavaPlugin {
         getCommand("l").setExecutor(new HubCommand());
         getCommand("hub").setExecutor(new HubCommand());
 
-        RankCoammand rankCMD = new RankCoammand();
+        RankCommand rankCMD = new RankCommand(new Rank_Utils());
 
         getCommand("rank").setExecutor(rankCMD);
         getCommand("rank").setTabCompleter(rankCMD);
