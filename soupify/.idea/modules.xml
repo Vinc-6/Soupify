@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/soupify_core/Soupify_Core.iml" filepath="$PROJECT_DIR$/soupify_core/Soupify_Core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/soupify_lobby/Soupify_Lobby.iml" filepath="$PROJECT_DIR$/soupify_lobby/Soupify_Lobby.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/soupify.iml" filepath="$PROJECT_DIR$/.idea/soupify.iml" />
+    </modules>
+  </component>
+</project>

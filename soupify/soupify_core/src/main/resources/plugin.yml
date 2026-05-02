@@ -1,0 +1,14 @@
+name: soupify_core
+version: '1.0-SNAPSHOT'
+main: vinc.sechs.soupify_core.Soupify_core
+commands:
+  msg:
+  ranks:
+  rank:
+  hub:
+  settings:
+  l:
+  r:
+
+libraries:
+  - com.zaxxer:HikariCP:7.0.2

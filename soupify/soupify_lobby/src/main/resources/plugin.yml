@@ -1,0 +1,13 @@
+name: soupify_lobby
+version: '1.0-SNAPSHOT'
+main: vinc.sechs.soupify_lobby.Soupify_Lobby
+api-version: '1.8'
+
+commands:
+  test:
+  spawnnpc:
+  setlobbyspawn:
+  spawn:
+
+depend:
+  - soupify_core
